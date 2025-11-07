@@ -6,8 +6,9 @@ with open ("data.txt", "r", encoding="utf-8") as fin:
 print(adatok)
 
 #2. Adatok átlaga
-# atlag=sum(adatok)/len(adatok)
-# print("Átlaga:" (atlag))
+atlag=sum(adatok)/len(adatok)
+print(f"Átlaga: {atlag:.2f}")
+
 #3. dontsuk el hogy volt e 4
 #4. keressuk meg volt e 5
 #5.hany darab kilences volt?
