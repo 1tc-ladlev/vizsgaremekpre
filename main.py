@@ -48,17 +48,15 @@ for szam in adatok:
 print(f"A legnagyobb szám: {legnagyobb_szam}")
 
 #7. Hanyadik indexen van a legkisebb elem?
-minindex=adatok[0]
-helye=adatok[0]
-for i in range(len(adatok)):
-    if adatok[i]<minindex:
-        minindex=adatok[i]
-        helye=i
+minindex=0
+for i in range(1,len(adatok)):
+    if adatok[i] <adatok[minindex]:
+        minindex=i
 
-print(f"A legkisebb elem a(z) {minindex} és a(z) {helye}. elem")
+print(f"A legkisebb elem a(z) {adatok[minindex]} és a(z) {minindex}. elem")
     
 #8. paros szamok kiirasa paros txt.be
-with open("paros.txt", "w", encoding="utf-8") as f:
+with open("paros.txt", "w", encoding="utf-8") as fout:
     for szam in adatok:
         if szam % 2 == 0:      
-            f.write(f"{szam}\n")
+            print(szam, file=fout)
