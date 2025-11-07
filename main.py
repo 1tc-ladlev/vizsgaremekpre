@@ -9,7 +9,18 @@ print(adatok)
 atlag=sum(adatok)/len(adatok)
 print(f"Átlaga: {atlag:.2f}")
 
-#3. dontsuk el hogy volt e 4
+#3. dontsuk el hogy volt e 4?
+van=False
+for szam in adatok:
+    if szam==4: 
+        van=True
+        break
+
+if van:
+    print("van 4-es")
+else:
+    print("nincs 4-es")
+
 #4. keressuk meg volt e 5
 #5.hany darab kilences volt?
 #6. Mennyi a legnagyobb beirt szam?
