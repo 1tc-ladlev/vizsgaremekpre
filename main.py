@@ -39,6 +39,12 @@ for szam in adatok:
     if szam == 9:
         db+=1
 print(f"{db} darab kilences van." ) 
+
 #6. Mennyi a legnagyobb beirt szam?
+legnagyobb_szam=adatok[0]
+for szam in adatok:
+    if szam>legnagyobb_szam:
+        legnagyobb_szam = szam
+print(f"A legnagyobb szám: {legnagyobb_szam}")
 #7. Hanyadik indexen van a legkisebb elem?
-#8. paros szamok kiirasa 
+#8. paros szamok kiirasa paros txt.be
