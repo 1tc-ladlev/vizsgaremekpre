@@ -22,7 +22,23 @@ else:
     print("nincs 4-es")
 
 #4. keressuk meg volt e 5
+van5=False
+for i in range(len(adatok)):
+    if adatok[i]==5:
+        van5=True
+        break
+
+if van5:
+    print(f"Van 5-ös és a(z) {i}. elem")
+else:
+    print("Nincs 5-ös")
+
 #5.hany darab kilences volt?
+db=0
+for szam in adatok: 
+    if szam == 9:
+        db+=1
+print(f"{db} darab kilences van." ) 
 #6. Mennyi a legnagyobb beirt szam?
 #7. Hanyadik indexen van a legkisebb elem?
 #8. paros szamok kiirasa 
