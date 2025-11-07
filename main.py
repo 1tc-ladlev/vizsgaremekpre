@@ -6,10 +6,9 @@ with open ("data.txt", "r", encoding="utf-8") as fin:
 print(adatok)
 
 #2. Adatok átlaga
-atlag=sum(adatok)/len(adatok)
-print("Átlaga:" (atlag))
+# atlag=sum(adatok)/len(adatok)
+# print("Átlaga:" (atlag))
 #3. dontsuk el hogy volt e 4
-volt_e=
 #4. keressuk meg volt e 5
 #5.hany darab kilences volt?
 #6. Mennyi a legnagyobb beirt szam?
